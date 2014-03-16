@@ -56,6 +56,7 @@ GEM
     mime-types (1.25.1)
     minitest (4.7.5)
     multi_json (1.9.0)
+    newrelic_rpm (3.7.3.204)
     pg (0.17.1)
     polyglot (0.3.4)
     puma (2.8.1)
@@ -124,6 +125,7 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   haml-rails
   jquery-rails
+  newrelic_rpm
   pg
   puma
   rails (= 4.0.4)
