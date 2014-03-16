@@ -25,12 +25,13 @@ h1 {
 	vertical-align: top;
 	margin-left: 30px;
 	margin-top: 0;
-}
-h1 small {
-	color: #65acae;
-	display: block;
-	font-size: 0.5em;
-	font-weight: 600;
+
+  small {
+    color: #65acae;
+    display: block;
+    font-size: 0.5em;
+    font-weight: 600;
+  }
 }
 
 p {
@@ -43,24 +44,25 @@ hr {
 	border-bottom: solid #c3c3c3 1px;
 	margin: 40px 0;
 	height: 2px;
-}
 
-hr.dashed {
-	border: none;
-	border-bottom: dashed #65acae 1px;
-	margin: 10px 0 30px 0;
-	height: 2px;
+  &.dashed {
+    border: none;
+    border-bottom: dashed #65acae 1px;
+    margin: 10px 0 30px 0;
+    height: 2px;
+  }
 }
 
 ul {
 	text-align: left;
-}
 
-ul li {
-	color: #65acae;
-}
-ul li .item {
-	color: #333;
+  li {
+    color: #65acae;
+
+    .item {
+      color: #333;
+    }
+  }
 }
 
 .box {
@@ -71,9 +73,9 @@ ul li .item {
 	padding: 10px 20px 30px 20px;
 	margin-right: 10px;
 	float: left;
-}
 
-.box h3 {
-	min-height: 45px;
-	vertical-align: middle;
+  h3 {
+    min-height: 45px;
+    vertical-align: middle;
+  }
 }
