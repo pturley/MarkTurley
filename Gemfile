@@ -3,7 +3,9 @@ ruby '2.0.0'
 
 gem 'rails', '4.0.4'
 
-gem 'sqlite3'
+group :development, :test do
+  gem 'sqlite3'
+end
 gem 'pg'
 
 gem 'sass-rails', '~> 4.0.2'
