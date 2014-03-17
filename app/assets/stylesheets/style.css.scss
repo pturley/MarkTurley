@@ -2,6 +2,8 @@ body {
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
    	font-weight: 300;
    	color: #333;
+   	padding: 0;
+   	margin: 0;
 }
 
 .content {
@@ -78,4 +80,10 @@ ul {
     min-height: 45px;
     vertical-align: middle;
   }
+}
+
+header {
+	height: 50px;
+	width: 100%;
+	background-color: #201d1e;
 }
