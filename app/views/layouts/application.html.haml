@@ -6,7 +6,17 @@
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
   %body
-    %header 
-      HEllo
-    = yield
+    .content
+      %nav.left
+        = image_tag "logo.png", "class" => "logo"
+        %ul
+          %li
+            About Us
+          %li
+            Specialties
+          %li
+            Contact
+      = yield
+      .clearfix
+
     = render "layouts/google_analytics"
