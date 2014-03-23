@@ -7,6 +7,10 @@ body {
  	margin: 0;
 }
 
+p {
+  margin: 0.75em 0;
+}
+
 .content {
 	margin: 0 auto;
 	max-width: 1000px;
@@ -23,7 +27,7 @@ body {
 }
 
 img.portrait {
-  width: 200px;
+  width: 225px;
   border-radius: 200px;
   padding-right: 10px;
   margin-right: 20px;
@@ -47,15 +51,12 @@ h2 {
 
 hr {
 	border: none;
-	border-bottom: solid #D8D8D8 1px;
-	margin: 40px 0;
-	height: 2px;
+  border-bottom: solid #65acae 1px;
+  margin: 40px 0;
+  height: 2px;
 
-  &.dashed {
-    border: none;
-    border-bottom: dashed #65acae 1px;
-    margin: 10px 0 30px 0;
-    height: 2px;
+  &.heading {
+    margin: 0 0 40px 0;
   }
 }
 
@@ -140,6 +141,11 @@ nav {
 
 .clearfix {
   clear: both;
+}
+
+.practice {
+  text-align: center;
+  margin-top: 90px;
 }
 
 .cover {
