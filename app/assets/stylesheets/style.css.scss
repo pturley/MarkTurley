@@ -29,10 +29,6 @@ body {
   line-height: 1.4em;
 }
 
-p {
-  margin: 0.75em 0;
-}
-
 header {
   @include full-width;
 
@@ -43,15 +39,8 @@ header {
   .masthead {
     @include clearfix;
 
-    .mark-turley {
-      font-family: 'Playfair Display', serif;
-      font-size: 2.25em;
+    .business-card .name {
       margin-top: 55px;
-    }
-
-    .byline {
-      color: $accent;
-      margin-top: 15px;
     }
 
     .phone-numbers {
@@ -84,111 +73,54 @@ header {
   float: right;
 }
 
-img.portrait {
-  width: 200px;
-  border-radius: 200px;
-  padding-right: 10px;
-  margin-right: 20px;
+.business-card {
+  .name {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.25em;
+  }
+
+  .title {
+    color: $accent;
+    margin-top: 15px;
+  }
+
+  &.small {
+    .name {
+      font-size: 1.5em;
+    }
+
+    .title {
+      margin-top: 10px;
+    }
+  }
 }
 
-h2 {
-  font-weight: 300;
-  display: block;
-  vertical-align: top;
-  margin-left: 30px;
-  margin-top: 0;
-  font-size: 2em;
-
-  small {
-    color: $accent;
+section {
+  .person {
+    @include clearfix;
     display: block;
-    font-size: 0.5em;
-    font-weight: 600;
-  }
-}
+    padding-top: 50px;
+    padding-bottom: 20px;
 
-hr {
-  border: none;
-  border-bottom: solid $accent 1px;
-  margin: 40px 0;
-  height: 2px;
+    img {
+      box-shadow: rgba(0, 0, 0, 0.6) 0px 1px 2px 0px;
+      padding: 5px;
+      width: 175px;
+      float: left;
 
-  &.heading {
-    margin: 0 0 40px 0;
-  }
-}
-
-ul {
-  text-align: left;
-
-  li {
-    color: $accent;
-
-    .item {
-      color: #333;
-    }
-  }
-}
-
-.box {
-  background-color: #fff;
-  color: #666;
-  height: 200px;
-  padding: 10px 0px 30px 0px;
-  margin-bottom: 30px;
-
-  ul {
-    display: inline-block;
-    margin: 0 10px 0 0;
-    width: 35%;
-    box-sizing: border-box;
-    vertical-align: top;
-  }
-  .description {
-    display: inline-block;
-    width: 60%;
-
-    p {
-      margin-top: 0;
-    }
-  }
-  h3 {
-    vertical-align: middle;
-  }
-}
-
-.nav {
-  width: 15%;
-  float: left;
-
-  .logo {
-    width: 120px;
-  }
-
-  ul {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 0;
-
-    li {
-      color: black;
-      padding-top: 4px;
+      &.small {
+        width: 100px;
+      }
     }
 
+    .bio {
+      margin-left: 50px;
+      float: left;
+      width: 66%;
+
+      &.without-business-card p:first-child {
+        margin-top: 0;
+      }
+    }
   }
-}
-
-.people {
-  width: 85%;
-  float: left;
-}
-
-.practice {
-  text-align: center;
-  margin-top: 90px;
-}
-
-.cover {
-  width: 100%;
-  margin-top: 70px;
 }
