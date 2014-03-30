@@ -13,6 +13,9 @@ $subtle: #666;
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
+}
+
+@mixin padded-content {
   padding-left: 50px;
   padding-right: 50px;
 }
@@ -43,6 +46,7 @@ header {
 
   .masthead {
     @include clearfix;
+    @include padded-content;
 
     .business-card .name {
       margin-top: 55px;
@@ -101,6 +105,8 @@ header {
 }
 
 section {
+  @include padded-content;
+
   .person {
     @include clearfix;
     display: block;
@@ -127,6 +133,16 @@ section {
         margin-top: 0;
       }
     }
+  }
+
+  &.map {
+    width: 100%;
+    height: 245px;
+    margin: 50px 0 0 0;
+    padding: 0;
+
+    background-image: image-url("map.jpg");
+    background-position: center;
   }
 
   .practice {
