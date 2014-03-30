@@ -1,4 +1,5 @@
-$accent: #50BCF1;
+$accent: #00A3D9;
+$subtle: #666;
 
 @mixin clearfix {
   &:after {
@@ -8,33 +9,71 @@ $accent: #50BCF1;
   }
 }
 
+@mixin full-width {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
 body {
   background-color: #f2f2f2;
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
- 	font-weight: 300;
- 	color: #333;
- 	padding: 0;
- 	margin: 0;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  color: #333;
+  padding: 0;
+  margin: 0;
+  font-family: 'Merriweather', serif;
+  font-size: 1em;
+  line-height: 1.4em;
 }
 
 p {
   margin: 0.75em 0;
 }
 
+header {
+  @include full-width;
+
+  .logo {
+    width: 140px;
+  }
+
+  .masthead {
+    @include clearfix;
+
+    .mark-turley {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.25em;
+      margin-top: 55px;
+    }
+
+    .byline {
+      color: $accent;
+      margin-top: 15px;
+    }
+
+    .phone-numbers {
+      font-size: 0.8125em;
+      text-align: right;
+      color: $subtle;
+
+      .office-phone {
+        margin-top: 70px;
+      }
+    }
+  }
+
+}
+
 .content {
-	margin: 0 auto;
-	max-width: 1000px;
-	width: 100%;
+  @include full-width;
+  @include clearfix;
+  margin-top: -35px;
   background-color: white;
-  padding: 20px 60px;
   text-align: left;
 
-  @include clearfix;
-
-  &.alpha {
-    padding-left: 20px;
-    padding-right: 100px;
-  }
 }
 
 .pull-left {
@@ -53,11 +92,11 @@ img.portrait {
 }
 
 h2 {
-	font-weight: 300;
-	display: block;
-	vertical-align: top;
-	margin-left: 30px;
-	margin-top: 0;
+  font-weight: 300;
+  display: block;
+  vertical-align: top;
+  margin-left: 30px;
+  margin-top: 0;
   font-size: 2em;
 
   small {
@@ -69,7 +108,7 @@ h2 {
 }
 
 hr {
-	border: none;
+  border: none;
   border-bottom: solid $accent 1px;
   margin: 40px 0;
   height: 2px;
@@ -80,7 +119,7 @@ hr {
 }
 
 ul {
-	text-align: left;
+  text-align: left;
 
   li {
     color: $accent;
@@ -94,8 +133,8 @@ ul {
 .box {
   background-color: #fff;
   color: #666;
-	height: 200px;
-	padding: 10px 0px 30px 0px;
+  height: 200px;
+  padding: 10px 0px 30px 0px;
   margin-bottom: 30px;
 
   ul {

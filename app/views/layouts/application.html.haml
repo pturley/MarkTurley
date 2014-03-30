@@ -2,11 +2,25 @@
 %html
   %head
     %title Mark Turley | Attorney at Law
+    = stylesheet_link_tag    'http://fonts.googleapis.com/css?family=Playfair+Display|Merriweather:400,400italic', media: "all", "data-turbolinks-track" => true
     = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
   %body
-
-    = yield
+    %header
+      .masthead
+        = image_tag "initials.png", "class" => "logo pull-left"
+        .pull-left
+          .mark-turley
+            Mark Turley
+          .byline
+            Attorney at law in Rolla, MO
+        .phone-numbers.pull-right
+          .office-phone
+            office: (573) 612-1408
+          .fax
+            fax: (573) 303-5869
+    .content
+      = yield
 
     = render "layouts/google_analytics"
