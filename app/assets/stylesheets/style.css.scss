@@ -80,6 +80,7 @@ header {
   margin-top: -35px;
   background-color: white;
   text-align: left;
+  border: 1px solid #E9E9E9;
 
 }
 
@@ -201,6 +202,8 @@ section {
 
   &.practice-areas{
     margin-top: 100px;
+    padding-bottom: 50px;
+
 
     .practice {
       width: 66%;
@@ -226,4 +229,8 @@ section {
       }
     }
   }
+}
+
+footer {
+  height: 100px;
 }
