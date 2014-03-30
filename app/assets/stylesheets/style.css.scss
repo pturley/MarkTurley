@@ -46,6 +46,10 @@ h1 {
   font-size: 2.25em;
 }
 
+a[href^=tel] {
+  color: $accent;
+}
+
 header {
   @include full-width;
 
