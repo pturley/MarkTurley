@@ -1,9 +1,10 @@
 source 'https://rubygems.org'
-ruby '2.2.4'
+ruby File.open(File.expand_path(".ruby-version", File.dirname(__FILE__))) { |f| f.read.chomp }
 
 gem 'rails', '4.0.4'
 
 gem 'pg'
+
 group :development, :test do
   gem 'sqlite3'
 end
