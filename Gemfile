@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 ruby File.open(File.expand_path(".ruby-version", File.dirname(__FILE__))) { |f| f.read.chomp }
 
-gem 'rails', '4.0.4'
+gem 'rails', '4.2.10'
 
 gem 'pg'
 
